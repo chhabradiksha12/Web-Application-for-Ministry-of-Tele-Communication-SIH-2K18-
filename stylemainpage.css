@@ -1,0 +1,21 @@
+body{
+   
+   background-color:black;
+    background-image: url(banner1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+	background-size:cover;
+	
+     
+   
+}
+button
+{
+	     height:80px;
+		 background:#e8491d;
+		 border:0;
+		 padding-left:30px;
+		 padding-right:30px;
+		 color:#ffffff;
+		 
+}

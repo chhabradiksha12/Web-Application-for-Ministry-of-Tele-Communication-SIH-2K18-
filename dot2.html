@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+				   <title> DOT login </title>
+		           <link rel="stylesheet" href="style1.css"> 
+<script>
+function validate()
+{
+if(form.anumber.value=="")
+{
+alert("please enter the aadhar number");
+form.anumber.focus();
+return false;
+}
+if(isNaN(form.anumber.value))
+{
+alert("Invalid aadhar number");
+form.anumber.focus();
+return false;
+}
+if((form.anumber.value).length<12)
+{
+alert("aadhar number should be minimum  12 digits");
+form.anumber.focus();
+return false;
+}
+}
+</script>
+</head>
+<body>
+
+ <header>
+				         <div class="container">
+						    <div id="branding">
+							   <h1><span class="highlight">DoT login</span></h1>
+							</div>
+							<nav>
+							    <ul>
+								    
+									 <li class="current"><a href="services.html">Services</a></li>
+									 <li class="current"><a href="about.html">About</a></li>
+								</ul>
+							</nav>
+						 </div>
+                   </header>
+                   
+				   <section id ="newsletter">
+				                <div class ="container">
+								     <h1></h1>
+									 
+								</div>
+				   </section>
+				   <section id="main">
+				                <div class="container">
+                                      <article id="main-col">
+									  
+										 
+									  </article>
+								      <aside id="sidebar">
+									          <div class="dark">    
+									          <h3> DoT login</h3> 
+<form  name='form' method="post" action="actionpage1.php" onsubmit="return validate(); " >
+  
+   <div>
+											         <label for="uname"><b>Username</b></label><br/>
+													<input type="text" placeholder="Enter Username" name='username' required />
+                             
+													</div>
+													<div>
+													 <label for="psw"><b>password</b></label><br/>
+													<input type="password" placeholder="Enter password" name='password' required />
+											
+													</div>
+													<div>
+													
+                                                     </div>
+													<div>
+													<center><button class="button" type="submit" top>Submit</button></center>
+                                                    </div>      
+													<div>
+												
+                                                     <center><input type="checkbox" checked="checked" name="remember" /> Remember me
+                                                     </center>
+													 </div>
+</form>
+
+
+								  </div>
+									  </aside>
+								
+								</div>								
+				   </section>
+		           <footer>
+				            <p>www.knowyourconnections.in</p>
+				   </footer>
+</body>
+</html>

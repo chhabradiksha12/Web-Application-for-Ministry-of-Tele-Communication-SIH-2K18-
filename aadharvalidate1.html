@@ -1,0 +1,86 @@
+!Doctype html>
+<html>
+          <head>
+		           <meta charset="utf-8">
+				   <title> Customer login </title>
+		           <link rel="stylesheet" href="style1.css"> 
+				   <script type="text/javascript">
+function validate()
+{
+if(form.anumber.value=="")
+{
+alert("please enter the aadhar number");
+form.anumber.focus();
+return false;
+}
+if(isNaN(form.anumber.value))
+{
+alert("Invalid aadhar number");
+form.anumber.focus();
+return false;
+}
+if((form.anumber.value).length<12)
+{
+alert("aadhar number should be minimum  12 digits");
+form.anumber.focus();
+return false;
+}
+}
+
+
+</script>
+		
+		  </head>
+		  <body>
+		           <header>
+				         <div class="container">
+						    <div id="branding">
+							   <h1><span class="highlight">Customer login</span></h1>
+							</div>
+							<nav>
+							    <ul>
+								    
+									 <li><a href="about.html">About</a></li>
+									 <li><a href="services.html">Services</a></li>
+								</ul>
+							</nav>
+						 </div>
+                   </header>
+                   
+				   <section id ="newsletter">
+				                <div class ="container">
+								     <h1></h1>
+									
+								</div>
+				   </section>
+				   <section id="main">
+				                <div class="container">
+                                      <article id="main-col">
+									 
+										 
+									  </article>
+								      <aside id="sidebar">
+									          <div class="dark">    
+									          <h3> Customer login</h3> 
+											  <form class="quote" method="post" action="final.php" onSubmit="return validate();" >
+											       
+   Enter your aadhar card number:<br/>
+  <input type="text" name="anumber"/><br/>
+  
+<br>
+  <input type="submit" value="verification" value="Submit"/>
+</form> 
+								                    
+												
+													
+											  </div>
+									  </aside>
+								
+								</div>								
+				   </section>
+		           <footer>
+				            <p>www.knowyourconnections.in</p>
+				   </footer>
+		  </body>
+		  
+</html>
