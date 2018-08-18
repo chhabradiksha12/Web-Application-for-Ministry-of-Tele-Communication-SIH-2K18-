@@ -1,0 +1,2 @@
+# knowing_no_of_connections_issued_on_aadhar_card
+Developing a web application  to check not to give more than 9 mobile connections to an individual.For making application easy and less complex we divide portal into 3 parts: User,DoT(department of telecommunication),TSP(telecom service provider).Where user can access total no of connections and respective service provider,DoT can access total no of connections with  details about the customer in a LSA and TSP can see  only total no of  connections
